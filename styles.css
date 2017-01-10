@@ -1,0 +1,78 @@
+ html, body {
+    margin:0;
+  }
+
+  .command_palette {
+    display: flex;
+    padding: 5px;
+    background: #1e1e1e;
+    color: white;
+  }
+
+  .command_palette > * {
+    margin: 10px;
+  }
+
+  .command_item {
+    flex-grow: 1;
+    align-self: center;
+  }
+
+  .selected_colour {
+    display: inline-flex;
+    position: relative;
+  }
+
+  .clear, .fullscreen {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #current_colour {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    margin-left: 5px;
+    background: red;
+  }
+
+  [data-colour]{
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  [data-colour=red]{
+    background: red;
+    text-align: center;
+  }
+
+  [data-colour=yellow]{
+    background: yellow;
+  }
+
+  [data-colour=pink]{
+    background: pink;
+  }
+
+  [data-colour=green]{
+    background: green;
+    color: white;
+  }
+
+  [data-colour=purple]{
+    background: purple;
+    color: white;
+  }
+
+  [data-colour=orange]{
+    background: orange;
+  }
+
+  [data-colour=blue]{
+    background: blue;
+    color: white;
+  }
